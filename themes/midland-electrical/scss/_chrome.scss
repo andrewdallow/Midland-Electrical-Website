@@ -1,10 +1,103 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 6/06/2016, 2:43:12 PM
-    Author     : Andrew Dallow
-*/
+/*******************************************************************************
+*Chrome
+*******************************************************************************/
 
+
+/* Header
+*******************************************************************************/
+
+.top-header {
+    .contact-container {
+        height: 150px;
+    }
+    .header-contact {
+        text-align: center;
+        margin-top: 40px;
+        padding: 5px;
+
+        h1 {
+            margin: 0;
+        }
+
+        .panel {
+            background: $color-primary-1;
+        }
+
+        .panel-body{
+            padding: 5px;
+            border: 2px solid;
+        }
+    }
+}
+
+
+/* Navigation
+*******************************************************************************/
+$selected-color: #999999;
+.nav-section {
+    .navbar {
+        background: $color-primary-0;
+
+        .navbar-toggle {
+            border-color: #fff !important;
+        }
+
+        .navbar-nav {
+            font-size: 18px;
+            a { 
+                text-transform: uppercase;
+                color: #fff !important;
+
+                &:hover {
+                    color: $selected-color !important;
+                }
+            }
+
+            .current, .section {
+                padding-bottom: 5px;
+                color: $selected-color !important;
+                border-bottom: 1px solid;
+            }
+        }        
+
+    }
+
+
+}
+
+
+/* Footer
+*******************************************************************************/
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: $color-primary-0;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    
+    a {
+        color: #fff !important;
+        text-decoration: underline;
+        &:hover {
+             color: $selected-color !important;
+        }
+    }
+        
+    .contact-info .row {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+   
+    .fa-mobile {
+        padding-left: 30px;
+    }
+    .fa {      
+        padding-right: 10px;
+    }
+    
+    .footer-bottom {
+        padding-top: 20px;
+    }
+}

@@ -1,10 +1,19 @@
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+    CSS Styles file for Midland Electrical and Security Website.
 */
 /* 
     Created on : 6/06/2016, 2:42:51 PM
     Author     : Andrew Dallow
 */
 
+$color-primary-0: #213F9A;	// Main Primary color */
+$color-primary-1: #9FC5F8;
+$color-primary-2: #3E57A2;
+$color-primary-3: #152E79;
+$color-primary-4: #091F5F;
+
+@import "shared"; 
+@import "chrome";
+@import "page_styles"; 
+@import "icons";
+@import "forms";

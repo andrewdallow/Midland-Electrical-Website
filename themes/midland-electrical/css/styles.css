@@ -1,0 +1,106 @@
+/*
+    CSS Styles file for Midland Electrical and Security Website.
+*/
+/* 
+    Created on : 6/06/2016, 2:42:51 PM
+    Author     : Andrew Dallow
+*/
+/*******************************************************************************
+* Shared styles
+*******************************************************************************/
+html {
+  overflow: auto; }
+
+body {
+  font-family: sans-serif !important; }
+
+/*******************************************************************************
+*Chrome
+*******************************************************************************/
+/* Header
+*******************************************************************************/
+.top-header .contact-container {
+  height: 150px; }
+.top-header .header-contact {
+  text-align: center;
+  margin-top: 40px;
+  padding: 5px; }
+  .top-header .header-contact h1 {
+    margin: 0; }
+  .top-header .header-contact .panel {
+    background: #9FC5F8; }
+  .top-header .header-contact .panel-body {
+    padding: 5px;
+    border: 2px solid; }
+
+/* Navigation
+*******************************************************************************/
+.nav-section .navbar {
+  background: #213F9A; }
+  .nav-section .navbar .navbar-toggle {
+    border-color: #fff !important; }
+  .nav-section .navbar .navbar-nav {
+    font-size: 18px; }
+    .nav-section .navbar .navbar-nav a {
+      text-transform: uppercase;
+      color: #fff !important; }
+      .nav-section .navbar .navbar-nav a:hover {
+        color: #999999 !important; }
+    .nav-section .navbar .navbar-nav .current, .nav-section .navbar .navbar-nav .section {
+      padding-bottom: 5px;
+      color: #999999 !important;
+      border-bottom: 1px solid; }
+
+/* Footer
+*******************************************************************************/
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #213F9A;
+  text-align: center;
+  font-size: 18px;
+  color: #fff; }
+  .footer a {
+    color: #fff !important;
+    text-decoration: underline; }
+    .footer a:hover {
+      color: #999999 !important; }
+  .footer .contact-info .row {
+    padding: 0 !important;
+    margin: 0 !important; }
+  .footer .fa-mobile {
+    padding-left: 30px; }
+  .footer .fa {
+    padding-right: 10px; }
+  .footer .footer-bottom {
+    padding-top: 20px; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6/06/2016, 2:43:46 PM
+    Author     : Andrew Dallow
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6/06/2016, 2:43:26 PM
+    Author     : Andrew Dallow
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6/06/2016, 2:43:20 PM
+    Author     : Andrew Dallow
+*/
+
+/*# sourceMappingURL=styles.css.map */
