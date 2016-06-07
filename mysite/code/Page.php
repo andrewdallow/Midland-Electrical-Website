@@ -53,7 +53,8 @@ class Page_Controller extends ContentController {
         
         $JSFiles = array(
             $themeFolder . "/javascript/MidlandElectricalApp.js",
-            $themeFolder . "/javascript/ChromeController.js"
+            $themeFolder . "/javascript/ChromeController.js",
+            $themeFolder . "/javascript/contactFormController.js"
         );  
         
         Requirements::combine_files("combinedJS.js", $JSFiles);
