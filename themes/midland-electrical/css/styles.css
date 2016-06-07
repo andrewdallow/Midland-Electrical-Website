@@ -58,7 +58,7 @@ body {
   padding-bottom: 20px;
   background: #213F9A;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff; }
   .footer a {
     color: #fff !important;
@@ -69,9 +69,9 @@ body {
     padding: 0 !important;
     margin: 0 !important; }
   .footer .fa-mobile {
-    padding-left: 30px; }
+    padding-left: 10px; }
   .footer .fa {
-    padding-right: 10px; }
+    padding-right: 5px; }
   .footer .footer-bottom {
     padding-top: 20px; }
 

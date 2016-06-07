@@ -20,11 +20,13 @@
                     <div class="col-md-3 footer-contact-phone">
                         <% if $SiteConfig.PhoneContact %>
                         <i class="fa fa-phone"></i>
-                        $SiteConfig.PhoneContact
+                        <span ng-bind="phoneFormat({$SiteConfig.PhoneContact})">
+                        </span>
                         <% end_if %>
                         <% if $SiteConfig.MobileContact %>
                         <i class="fa fa-mobile"></i>
-                        $SiteConfig.MobileContact
+                        <span ng-bind="mobileFormat($SiteConfig.MobileContact)">
+                        </span>
                         <% end_if %>
                     </div>
                     <% end_if %>

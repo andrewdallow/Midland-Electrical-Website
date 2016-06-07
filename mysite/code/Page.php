@@ -52,7 +52,8 @@ class Page_Controller extends ContentController {
         Requirements::combine_files("combinedJSExternal.js", $JSFilesExternal);
         
         $JSFiles = array(
-            $themeFolder . "/javascript/MidlandElectricalApp.js"
+            $themeFolder . "/javascript/MidlandElectricalApp.js",
+            $themeFolder . "/javascript/ChromeController.js"
         );  
         
         Requirements::combine_files("combinedJS.js", $JSFiles);

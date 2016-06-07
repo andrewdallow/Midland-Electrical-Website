@@ -19,15 +19,19 @@
     <body ng-app="MidlandElectricalApp">
         <div id="wrapper">
             <header id="header">
+                <div ng-controller="ChromeController">                    
                 <% include Header %>
+                </div>
                 <% include MainNav %>
             </header>
 
             <main>
                 $Layout 
             </main>
-
-            <% include Footer %>
+            <div ng-controller="ChromeController">                    
+                <% include Footer %>
+            </div>
+            
 
         </div>
     </body>
