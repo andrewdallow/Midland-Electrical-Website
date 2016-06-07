@@ -1,4 +1,4 @@
-<div class="contact-section">
+<div class="contact-section" ng-controller="contactFormController">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -69,7 +69,7 @@
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <form class="contactForm"
-                                  ng-controller="contactFormController"
+
                                   name="form"
                                   ng-submit="sendMessage(input)"
                                   >
@@ -161,7 +161,7 @@
                                             Send
 
                                         </button>
-                                </div>
+                                    </div>
 
                             </form>
                         </div>
@@ -169,5 +169,20 @@
                 </div>
             </div>
         </div>
+        <% if $SiteConfig.PhysicalAddress %>        
+        <div class="row">
+            <div class="col-sm-12">
+                <iframe
+                    width="1170"
+                    height="500"
+                    frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyALgk7RVWNswDkhS5bHposP71bSy3rYDSM
+                    &q={$SiteConfig.PhysicalAddress}, 
+                    {$SiteConfig.PhysicalCity}, {$SiteConfig.PhysicalRegion}, 
+                    {$SiteConfig.PhysicalCountry}" allowfullscreen async defer>
+                </iframe>
+            </div>
+        </div>         
+        <% end_if %>
     </div>
 </div>
