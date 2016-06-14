@@ -21,10 +21,10 @@ class SiteConfigExtension extends DataExtension {
         'PhysicalCity' => 'Varchar',
         'PhysicalRegion' => 'Varchar',
         'PhysicalCountry' => 'Varchar',
-        'FacebookLink' => 'Varchar',
-        'TwitterLink' => 'Varchar',
-        'GoogleLink' => 'Varchar',
-        'YouTubeLink' => 'Varchar'
+        'FacebookLink' => 'Text',
+        'TwitterLink' => 'Text',
+        'GoogleLink' => 'Text',
+        'YouTubeLink' => 'Text'
     );
     private static $has_one = array(
         'Logo' => 'Image'

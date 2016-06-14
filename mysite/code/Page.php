@@ -45,6 +45,8 @@ class Page_Controller extends ContentController {
         /* Angular */
         $JSFilesExternal = array(
             $themeFolder . "/bower_components/angular/angular.js",
+            $themeFolder . "/bower_components/angular-animate/angular-animate.min.js",
+            $themeFolder . "/bower_components/angular-touch/angular-touch.js",
             $themeFolder . "/bower_components/angular-bootstrap/ui-bootstrap.js",
             $themeFolder . "/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"
         ); 
@@ -54,7 +56,8 @@ class Page_Controller extends ContentController {
         $JSFiles = array(
             $themeFolder . "/javascript/MidlandElectricalApp.js",
             $themeFolder . "/javascript/ChromeController.js",
-            $themeFolder . "/javascript/contactFormController.js"
+            $themeFolder . "/javascript/contactFormController.js",
+            $themeFolder . "/javascript/TestimonialCarouselCtrl.js"
         );  
         
         Requirements::combine_files("combinedJS.js", $JSFiles);

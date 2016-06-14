@@ -6,7 +6,9 @@
  * @author Andrew Dallow
  */
 class NewsHolderPage extends Page {
-    //put your code here
+   private static $allowed_children = array(
+        'NewsItemPage'
+    );
 }
 
 class NewsHolderPage_Controller extends Page_Controller {

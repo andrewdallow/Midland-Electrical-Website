@@ -1,5 +1,5 @@
 ---
-Name: mysite
+Name: midland-electrical
 After:
   - 'framework/*'
   - 'cms/*'

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
     CSS Styles file for Midland Electrical and Security Website.
 */
@@ -36,26 +37,86 @@ body {
 
 /* Navigation
 *******************************************************************************/
-.nav-section .navbar {
-  background: #213F9A; }
-  .nav-section .navbar .navbar-toggle {
-    border-color: #fff !important; }
-  .nav-section .navbar .navbar-nav {
-    font-size: 18px; }
-    .nav-section .navbar .navbar-nav a {
-      text-transform: uppercase;
-      color: #fff !important; }
-      .nav-section .navbar .navbar-nav a:hover {
-        color: #999999 !important; }
-    .nav-section .navbar .navbar-nav .current, .nav-section .navbar .navbar-nav .section {
-      padding-bottom: 5px;
-      color: #999999 !important;
-      border-bottom: 1px solid; }
+.nav-section {
+  /*Change icons size here*/ }
+  .nav-section .navbar {
+    background: #213F9A;
+    margin-bottom: 0 !important; }
+    .nav-section .navbar .navbar-toggle {
+      border-color: #fff !important; }
+    .nav-section .navbar .navbar-nav {
+      font-size: 18px; }
+      .nav-section .navbar .navbar-nav a {
+        text-transform: uppercase;
+        color: #fff !important; }
+        .nav-section .navbar .navbar-nav a:hover {
+          color: #999999 !important; }
+      .nav-section .navbar .navbar-nav .current, .nav-section .navbar .navbar-nav .section {
+        padding-bottom: 5px;
+        color: #999999 !important;
+        border-bottom: 1px solid; }
+  .nav-section .social-icons {
+    /*Change icons circle size and color here*/ }
+    .nav-section .social-icons .fa {
+      font-size: 20px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      color: #FFF;
+      color: white;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+    .nav-section .social-icons.icon-circle .fa {
+      border-radius: 50%; }
+    .nav-section .social-icons.icon-rounded .fa {
+      border-radius: 5px; }
+    .nav-section .social-icons.icon-flat .fa {
+      border-radius: 0; }
+    .nav-section .social-icons .fa:hover, .nav-section .social-icons .fa:active {
+      color: #FFF;
+      -webkit-box-shadow: 1px 1px 3px #333;
+      -moz-box-shadow: 1px 1px 3px #333;
+      box-shadow: 1px 1px 3px #333; }
+    .nav-section .social-icons.icon-zoom .fa:hover, .nav-section .social-icons.icon-zoom .fa:active {
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      transform: scale(1.1); }
+    .nav-section .social-icons .fa-android {
+      background-color: #A5C63B; }
+    .nav-section .social-icons .fa-bitbucket, .nav-section .social-icons .fa-bitbucket-square {
+      background-color: #003366; }
+    .nav-section .social-icons .fa-css3 {
+      background-color: #1572B7; }
+    .nav-section .social-icons .fa-dropbox {
+      background-color: #018BD3; }
+    .nav-section .social-icons .fa-facebook, .nav-section .social-icons .fa-facebook-square {
+      background-color: #3C599F; }
+    .nav-section .social-icons .fa-github, .nav-section .social-icons .fa-github-alt, .nav-section .social-icons .fa-github-square {
+      background-color: #070709; }
+    .nav-section .social-icons .fa-google-plus, .nav-section .social-icons .fa-google-plus-square {
+      background-color: #CF3D2E; }
+    .nav-section .social-icons .fa-html5 {
+      background-color: #E54D26; }
+    .nav-section .social-icons .fa-linkedin, .nav-section .social-icons .fa-linkedin-square {
+      background-color: #0085AE; }
+    .nav-section .social-icons .fa-pinterest, .nav-section .social-icons .fa-pinterest-square {
+      background-color: #CC2127; }
+    .nav-section .social-icons .fa-skype {
+      background-color: #01AEF2; }
+    .nav-section .social-icons .fa-twitter, .nav-section .social-icons .fa-twitter-square {
+      background-color: #32CCFE; }
+    .nav-section .social-icons .fa-youtube, .nav-section .social-icons .fa-youtube-play, .nav-section .social-icons .fa-youtube-square {
+      background-color: #C52F30; }
 
 /* Footer
 *******************************************************************************/
 .footer {
-  margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   background: #213F9A;
@@ -77,19 +138,267 @@ body {
   .footer .footer-bottom {
     padding-top: 20px; }
 
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 6/06/2016, 2:43:46 PM
-    Author     : Andrew Dallow
-*/
+/*Services Page
+*******************************************************************************/
+.home-section .banner-intro {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: rgba(0, 0, 0, 0.1); }
+  .home-section .banner-intro .banner-image img {
+    margin: 0 auto; }
+  .home-section .banner-intro .intro-text p {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-style: italic;
+    /* Extra Small Devices, Phones */
+    /* Small Devices, Tablets */
+    /* Medium Devices, Desktops */
+    /* Large Devices, Wide Screens */ }
+    @media only screen and (min-width: 320px) {
+      .home-section .banner-intro .intro-text p {
+        font-size: 16px; } }
+    @media only screen and (min-width: 480px) {
+      .home-section .banner-intro .intro-text p {
+        font-size: 16px; } }
+    @media only screen and (min-width: 768px) {
+      .home-section .banner-intro .intro-text p {
+        font-size: 18px; } }
+    @media only screen and (min-width: 992px) {
+      .home-section .banner-intro .intro-text p {
+        font-size: 25px; } }
+    @media only screen and (min-width: 1200px) {
+      .home-section .banner-intro .intro-text p {
+        font-size: 30px; } }
+.home-section .services-basic {
+  background: #fff;
+  padding-top: 30px; }
+  .home-section .services-basic .panel {
+    border: 2px solid #000; }
+    .home-section .services-basic .panel .icon {
+      font-size: 60px; }
+    .home-section .services-basic .panel h3 {
+      font-size: 35px; }
+    .home-section .services-basic .panel .icon, .home-section .services-basic .panel h3 {
+      color: #213F9A;
+      text-align: center; }
+    .home-section .services-basic .panel ul {
+      display: block;
+      list-style: none;
+      padding-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%; }
+      @media only screen and (min-width: 992px) {
+        .home-section .services-basic .panel ul {
+          height: 360px; } }
+      @media only screen and (min-width: 1200px) {
+        .home-section .services-basic .panel ul {
+          height: 330px; } }
+      .home-section .services-basic .panel ul li {
+        /* Custom, iPhone Retina */
+        /* Extra Small Devices, Phones */
+        /* Small Devices, Tablets */
+        /* Medium Devices, Desktops */
+        /* Large Devices, Wide Screens */ }
+        @media only screen and (min-width: 320px) {
+          .home-section .services-basic .panel ul li {
+            font-size: 19px; } }
+        @media only screen and (min-width: 480px) {
+          .home-section .services-basic .panel ul li {
+            font-size: 22px; } }
+        @media only screen and (min-width: 768px) {
+          .home-section .services-basic .panel ul li {
+            font-size: 22px; } }
+        @media only screen and (min-width: 992px) {
+          .home-section .services-basic .panel ul li {
+            font-size: 25px; } }
+        @media only screen and (min-width: 1200px) {
+          .home-section .services-basic .panel ul li {
+            font-size: 25px; } }
+        .home-section .services-basic .panel ul li:before {
+          font-family: 'FontAwesome';
+          content: '\f00c';
+          margin: 0 10px 0 -35px;
+          color: #009900; }
+  .home-section .services-basic .btn-read-more {
+    text-align: center; }
+    @media only screen and (min-width: 992px) {
+      .home-section .services-basic .btn-read-more {
+        padding-top: 20px; } }
+    .home-section .services-basic .btn-read-more .btn {
+      font-size: 25px !important;
+      height: 35px !important;
+      line-height: 32px !important;
+      padding: 0 18px !important;
+      border-width: 2px !important;
+      text-decoration: none !important; }
+      .home-section .services-basic .btn-read-more .btn:focus, .home-section .services-basic .btn-read-more .btn:active:focus, .home-section .services-basic .btn-read-more .btn.active:focus {
+        outline: 0; }
+      .home-section .services-basic .btn-read-more .btn:active, .home-section .services-basic .btn-read-more .btn.active {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none; }
+    .home-section .services-basic .btn-read-more .btn-default,
+    .home-section .services-basic .btn-read-more .btn-default-color,
+    .home-section .services-basic .btn-read-more .btn-fullcolor {
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      -ms-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      text-align: center;
+      margin-top: 5px; }
+    .home-section .services-basic .btn-read-more .btn-default,
+    .home-section .services-basic .btn-read-more .btn-default:focus {
+      background-color: #9FC5F8 !important;
+      border-color: #091F5F !important;
+      color: #000 !important; }
+    .home-section .services-basic .btn-read-more .btn-default:hover,
+    .home-section .services-basic .btn-read-more .btn-default:active,
+    .home-section .services-basic .btn-read-more .btn-default.active,
+    .home-section .services-basic .btn-read-more .open .dropdown-toggle.btn-default {
+      background-color: #9FC5F8 !important;
+      border-color: #213F9A !important;
+      color: #213F9A !important; }
+.home-section .testimonial-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: rgba(0, 0, 0, 0.1); }
+  .home-section .testimonial-section .carousel {
+    /* Custom, iPhone Retina */
+    /* Extra Small Devices, Phones */
+    /* Small Devices, Tablets */
+    /* Medium Devices, Desktops */
+    /* Large Devices, Wide Screens */ }
+    @media only screen and (min-width: 320px) {
+      .home-section .testimonial-section .carousel {
+        height: 520px; } }
+    @media only screen and (min-width: 480px) {
+      .home-section .testimonial-section .carousel {
+        height: 400px; } }
+    @media only screen and (min-width: 768px) {
+      .home-section .testimonial-section .carousel {
+        height: 300px; } }
+    @media only screen and (min-width: 992px) {
+      .home-section .testimonial-section .carousel {
+        height: 300px; } }
+    @media only screen and (min-width: 1200px) {
+      .home-section .testimonial-section .carousel {
+        height: 250px; } }
+    .home-section .testimonial-section .carousel .carousel-control.left, .home-section .testimonial-section .carousel .carousel-control.right {
+      background-image: none;
+      color: #000; }
+    .home-section .testimonial-section .carousel .carousel-indicators {
+      top: 98%;
+      right: 25px;
+      z-index: 31; }
+    .home-section .testimonial-section .carousel .carousel-indicators li {
+      background-color: #999;
+      background-color: rgba(70, 70, 70, 0.25); }
+    .home-section .testimonial-section .carousel .carousel-indicators .active {
+      background-color: #444; }
+    .home-section .testimonial-section .carousel .fa {
+      font-size: 40px;
+      color: #213F9A; }
+    .home-section .testimonial-section .carousel blockquote {
+      display: inline-block !important;
+      vertical-align: middle !important;
+      float: none !important;
+      background: #fff;
+      border-left: 0;
+      margin: 1.5em 10px;
+      padding: 0.8em 10px;
+      quotes: "“" "”" "‘" "’";
+      font-style: italic; }
+      .home-section .testimonial-section .carousel blockquote p {
+        display: inline; }
+    .home-section .testimonial-section .carousel .cutomer-name {
+      text-align: center; }
+
+/*About Page
+*******************************************************************************/
+.about-section h1 {
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 60px;
+  color: #091F5F; }
+.about-section .headshot {
+  margin: 0 auto;
+  margin-bottom: 20px; }
+.about-section .past-jobs {
+  margin-top: 20px;
+  border-top: 1px solid #000; }
+  .about-section .past-jobs .past-job-item {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px; }
+    .about-section .past-jobs .past-job-item > .row > .col-md-4:nth-child(3n+1) {
+      clear: both; }
+  .about-section .past-jobs h2 {
+    padding-bottom: 20px;
+    color: #091F5F; }
+  .about-section .past-jobs h5 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold; }
+  .about-section .past-jobs img {
+    margin: 0 auto;
+    border: 2px solid #000; }
+
+/*Services Page
+*******************************************************************************/
+.services-section .service-container {
+  border-bottom: 1px solid gray; }
+  .services-section .service-container:last-child {
+    border-bottom: 0; }
+  .services-section .service-container h1 {
+    font-size: 50px;
+    color: #213F9A; }
+  .services-section .service-container .description-section {
+    margin-top: 20px; }
+
+/*News Page
+*******************************************************************************/
+.news-holder .news-item {
+  margin-bottom: 60px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black; }
+  .news-holder .news-item:last-child {
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+    border-bottom: 0; }
+.news-holder .page-heading h1 {
+  padding-bottom: 30px;
+  color: #091F5F;
+  font-size: 50px; }
+.news-holder .article-headings h1 {
+  text-decoration: underline; }
+.news-holder .article-headings h5 {
+  color: gray; }
+
+.news-item-page h1 {
+  color: #091F5F;
+  font-size: 50px; }
+.news-item-page h5 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: gray; }
+.news-item-page .article-header-image {
+  display: block;
+  margin: 0 auto; }
+.news-item-page .news-content {
+  margin-top: 30px; }
+
 /*Contact Page
 *******************************************************************************/
 .contact-section {
-  padding: 10px; }
+  margin: 20px; }
   .contact-section h1 {
     text-align: center;
     color: #091F5F; }
@@ -117,6 +426,17 @@ and open the template in the editor.
         font-weight: bold; }
       .contact-section .contact-form .panel button {
         font-size: 18px; }
+  .contact-section .google-maps {
+    position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden; }
+  .contact-section .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important; }
 
 /*
 To change this license header, choose License Headers in Project Properties.

@@ -2,7 +2,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <img class="banner-image img-responsive" src="{$BannerImage.URL}">
+                <img class="banner-image img-responsive" 
+                     src="{$BannerImage.URL}" alt="Contact Heading Image">
             </div>
             <div class="row">
                 <div class="col-md-12 contact-heading">
@@ -69,10 +70,8 @@
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <form class="contactForm"
-
                                   name="form"
-                                  ng-submit="sendMessage(input)"
-                                  >
+                                  ng-submit="sendMessage(input)">
                                 <div class="row">
                                     <div class="col-md-12">
                                         <h2>Send us a message</h2>
@@ -162,7 +161,7 @@
 
                                         </button>
                                     </div>
-
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -171,7 +170,7 @@
         </div>
         <% if $SiteConfig.PhysicalAddress %>        
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12 google-maps">
                 <iframe
                     width="1170"
                     height="500"

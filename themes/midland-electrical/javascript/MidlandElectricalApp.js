@@ -9,6 +9,8 @@
 (function () {
     'use strict';
     angular.module('MidlandElectricalApp', [
+        'ngAnimate',
+        'ngTouch',
         'ui.bootstrap',
         'ui.bootstrap.tpls'
     ]);

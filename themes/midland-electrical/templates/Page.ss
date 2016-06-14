@@ -20,18 +20,19 @@
         <div id="wrapper">
             <header id="header">
                 <div ng-controller="ChromeController">                    
-                <% include Header %>
+                    <% include Header %>
                 </div>
                 <% include MainNav %>
             </header>
 
             <main>
-                $Layout 
+                $Layout
+
             </main>
             <div ng-controller="ChromeController">                    
                 <% include Footer %>
             </div>
-            
+
 
         </div>
     </body>
