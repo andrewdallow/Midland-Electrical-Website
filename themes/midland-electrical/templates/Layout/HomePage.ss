@@ -31,7 +31,7 @@
                                 <div class="col-md-12">
                                     <div class="icon">
                                         <% if $IconClass %>
-                                        <i class="$IconClass"></i>
+                                        <i class="fa $IconClass"></i>
                                         <% else_if $IconHTML %>
                                         $IconHTML
                                         <% end_if %>
