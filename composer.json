@@ -3,12 +3,13 @@
 	"description": "The SilverStripe Framework Installer",
 	"require": {
 		"php": ">=5.3.3",
-		"silverstripe/cms": "3.4.0",
-		"silverstripe/framework": "3.4.0",
-		"silverstripe/reports": "3.4.0",
-		"silverstripe/siteconfig": "3.4.0",
+		"silverstripe/cms": "^3.4.0",
+		"silverstripe/framework": "^3.4.0",
+		"silverstripe/reports": "^3.4.0",
+		"silverstripe/siteconfig": "^3.4.0",
 		"silverstripe-themes/simple": "3.1.*",
-		"silverstripe/googlesitemaps": "^1.5"
+		"silverstripe/googlesitemaps": "^1.5",
+		"gdmedia/ss-auto-git-ignore": "^1.0"
 	},
 	"require-dev": {
 		"phpunit/PHPUnit": "~3.7@stable"
@@ -22,5 +23,8 @@
 		"process-timeout": 600
 	},
 	"prefer-stable": true,
-	"minimum-stability": "dev"
+	"minimum-stability": "dev",
+         "scripts": {
+            "post-update-cmd": "GDM\\SSAutoGitIgnore\\UpdateScript::Go"
+       }
 }

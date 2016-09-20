@@ -31,16 +31,16 @@ class Service extends DataObject {
     public function getCMSFields() {
         return FieldList::create(array(
                     TextField::create('Title'),
-                            UploadField::create('HeadingImage')
-                            ->setFolderName('service-images')
-                            ->setAllowedExtensions(array(
-                                'png', 'gif', 'jpg', 'jpeg')),
+                    UploadField::create('HeadingImage')
+                        ->setFolderName('service-images')
+                        ->setAllowedExtensions(array(
+                            'png', 'gif', 'jpg', 'jpeg')),
                     TextField::create('IconClass',
                             'FontAwesome icon class name (displays on front page)'),
                     TextareaField::create('IconHTML',
                             'Full HTML code of FontAwesome Icon (displays on front page)'),
                     HtmlEditorField::create('Features',
-                            'Breif list of Service Features'),
+                            'Breif list of Service Features (displays on front page)'),
                     HtmlEditorField::create('DescriptionCol1',
                             'Column One: Long Description of Service'),
                     HtmlEditorField::create('DescriptionCol2', 

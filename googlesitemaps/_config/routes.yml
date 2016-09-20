@@ -1,6 +1,0 @@
----
-Name: googlesitemaproutes
----
-Director:
-  rules:
-    'sitemap.xml': 'GoogleSitemapController'
