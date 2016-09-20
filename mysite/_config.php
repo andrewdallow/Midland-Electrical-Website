@@ -1,10 +1,10 @@
 <?php
 
 global $project;
-$project = 'midland-electrical';
+$project = 'mysite';
 
 global $database;
-$database = 'SS_midlandelectrical';
+$database = 'ss_midlandelectrical';
 
 require_once('conf/ConfigureFromEnv.php');
 
