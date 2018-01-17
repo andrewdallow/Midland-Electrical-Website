@@ -2,7 +2,7 @@
 
 Author: Andrew Dallow
 
-Website designed and built to advertise the services of Midland Electrical and Security Ltd. It also uses the SilverStripe ([http://silverstripe.org](http://silverstripe.org)) content managment system (CMS) to allow the company to edit many parts of their website. 
+Website designed and built to advertise the services of [Midland Electrical and Security Ltd](http://projects.andrewdallow.nz/portfolio/midland-electrical/). It also uses the SilverStripe ([http://silverstripe.org](http://silverstripe.org)) content managment system (CMS) to allow the company to edit many parts of their website. 
 
 ### Website contains the following content:
 * `Home Page`: A summary of who the company is and what services they provide.
